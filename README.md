@@ -1,43 +1,29 @@
-# 📱 Portfolio App
-
-Flutter Navigation & Multi-Screen Application  
-Abdanix Solutions Internship – Week 3  
-
+Readme · MDCopy📱 Portfolio App
+Flutter Navigation & Multi-Screen Application
+Abdanix Solutions Internship – Week 3
 A multi-screen personal portfolio mobile application built with Flutter. Navigate between four dedicated screens — Home, Profile, Details, and Contact — with smooth navigation, data passing, and a consistent dark theme.
 
----
+📸 Screenshots
+Home ScreenNavigation CardsShow ImageShow Image
+Profile — About & EducationProfile — SkillsShow ImageShow Image
+Details ScreenContact InfoShow ImageShow Image
+Message FormMessage SentShow ImageShow Image
 
-## 📸 Screenshots
+✨ Features
 
-ss1.png
-ss2.png
-ss3.png
-ss4.png
-ss5.png
-ss6.png
-ss7.png
-ss8.png
-
----
-
-## ✨ Features
-
-- 4 Screens — Home, Profile, Details, Contact  
-- Flutter Navigation — Navigator.push & pop  
-- Data Passing — studentName, ProjectData, SkillData  
-- 3-Screen Data Flow — Home → Profile → Details  
-- Dark Theme UI  
-- Reusable Widgets  
-- Animated Entry Effects  
-- Collapsible AppBar (SliverAppBar)  
-- Clipboard Copy (Contact Screen)  
-- Interactive Message Form  
-
----
-
-## 🗂️ Project Structure
+4 Screens — Home, Profile, Details, Contact
+Flutter Navigation — Navigator.push & Navigator.pop
+Data Passing — studentName, ProjectData, SkillData
+3-Screen Data Flow — Home → Profile → Details
+Dark Theme UI
+Reusable Widgets
+Animated Entry Effects
+Collapsible AppBar — SliverAppBar
+Clipboard Copy — Contact Screen
+Interactive Message Form
 
 
+🗂️ Project Structure
 lib/
 ├── main.dart
 ├── constants/
@@ -45,63 +31,43 @@ lib/
 ├── widgets/
 │   └── custom_widgets.dart
 └── screens/
-├── home_screen.dart
-├── profile_screen.dart
-├── details_screen.dart
-└── contact_screen.dart
+    ├── home_screen.dart
+    ├── profile_screen.dart
+    ├── details_screen.dart
+    └── contact_screen.dart
 
----
+🧭 Navigation Flow
+HomeScreen
+  ├── → ProfileScreen   (passes: studentName)
+  │       └── → DetailsScreen (passes: SkillData + passThroughName)
+  ├── → DetailsScreen   (passes: ProjectData)
+  ├── → DetailsScreen   (passes: SkillData)
+  └── → ContactScreen
+Back navigation using Navigator.pop()
 
-## 🧭 Navigation Flow
+🔑 Key Concepts
+ConceptDetailNavigator.pushOpens a new screenNavigator.popReturns to previous screenData PassingVia constructor argumentsAnimationControllerStaggered entry animationsThemeDataConsistent dark theme across all screensStateful InteractionsMessage form with confirmation state
 
-- Home → Profile → Details  
-- Home → Details (ProjectData / SkillData)  
-- Home → Contact  
-- Back navigation using Navigator.pop()
+🛠️ Tech Stack
+TechnologyUsageFlutterUI frameworkDartProgramming languageNavigator APIScreen navigationAnimationControllerEntry animationsSliverAppBarCollapsible headersClipboard APICopy contact info
 
----
-
-## 🔑 Key Concepts
-
-- Navigator.push / pop  
-- Passing data between screens  
-- Reusable widgets  
-- AnimationController  
-- ThemeData consistency  
-- Stateful interactions  
-
----
-
-## 🛠️ Tech Stack
-
-- Flutter  
-- Dart  
-- Navigator API  
-- AnimationController  
-- SliverAppBar  
-- Clipboard API  
-
----
-
-## 🚀 Setup & Run
-
-
-flutter pub get
+🚀 Setup & Run
+bashflutter pub get
 flutter run
 
----
+Tested on Flutter 3.x / Dart 3.x
 
-## ⚡ Features Implemented
 
-- Animated navigation cards  
-- Reusable UI components  
-- Collapsible headers  
-- Message form with success state  
-- Clipboard copy functionality  
+⚡ Optional Enhancements Implemented
 
----
+Animated navigation cards (scale on tap + staggered slide-in)
+Reusable NavCard and SkillProgressCard widgets
+Collapsible headers with SliverAppBar
+Message form with success confirmation state
+Clipboard copy functionality on Contact Screen
 
-## 👩‍💻 Author
 
-Haleema Saadia
-
+👩‍💻 Author
+Haleema Saadia Chaudhary
+Mobile App Development — Flutter
+Abdanix Solutions
