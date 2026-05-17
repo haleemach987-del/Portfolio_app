@@ -1,7 +1,7 @@
-# Week 3 – Multi-Screen Personal Portfolio App
+#Multi-Screen Personal Portfolio App
 
 **Flutter Navigation & Multi-Screen Applications**  
-Abdanix Solutions Internship – Week 3
+
 
 ---
 
